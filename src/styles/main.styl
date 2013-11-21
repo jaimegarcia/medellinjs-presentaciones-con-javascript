@@ -2,8 +2,8 @@
 
 // variables!
 
-slide_width = 640px
-slide_height = 480px
+slide_width = 100%
+slide_height = 100%
 slide_background = #eaeaea
 
 slide_transition_length = .6s
@@ -64,10 +64,10 @@ article
   width: slide_width
   height: slide_height
   position: absolute
-  top: 50%
-  margin-top: (slide_height / 2) * -1
-  left: 50%
-  margin-left: (slide_width / 2) * -1
+  top: 0
+  margin-top: 0
+  left: 0
+  margin-left: 0
   background: slide_background
   padding: 40px
   border-radius: 0
@@ -143,12 +143,6 @@ article
   background: #0089f3
   border-radius: 0 4px 4px 0
 
-// bespoke-state styles
-
-.emphatic,
-.emphatic .bespoke-slide
-  background: slide_background
-
 // prism styles
 
 code
@@ -196,3 +190,24 @@ p
 a
   color: #0089f3
   text-decoration: none
+
+section.green
+  background-color: #52ED8D
+
+section.violet
+  background-color: #7914CC
+  color: white
+
+section.magenta
+  background-color: #DD40FF
+
+section.solido
+  background-image url(../img/fondo-isolido.png);
+  background-size cover
+  a
+    font-size: 40px
+
+.tint
+  background rgba(0,0,0,0.7)
+  padding 30px
+  color white
