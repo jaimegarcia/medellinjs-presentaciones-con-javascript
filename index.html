@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Presentaciones con Javascript</title><link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css"><link rel="stylesheet" type="text/css" href="styles/main.css"></head><body><article><section class="green"><h1>Cómo hacer presentaciones geniales con HTML, CSS y Javascript</h1></section><section class="solido"><div class="tint"><h1>Jaime Andrés García</h1><h2>CEO - Ingenio Sólido</h2><a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a><br><a href="http://twitter.com/JaimeAGarciaM">@JaimeAGarciaM</a></div></section><section class="violet"><h1>Crear Repositorio - Opcional</h1><h2>Recomiendo Github</h2><h2>Para utilizar las Github Pages</h2></section><section class="green"><h1>¿Qué colores uso?</h1><h2>Tome un color base: #DD40FF</h2><h2>Adobe Kuler</h2><h2>Improvise y genere cambios</h2></section><section><h2>Pre-requisitos y Presentación Base</h2><code class="language-bash"><pre>sudo npm install -g yo
+sudo npm install -g yo generator-bespoke
+
+git clone ....
+
+cd medellinjs-presentaciones-con-javascript
+yo bespoke
+sudo npm install
+
+grunt server
+
+cd src
+mkdir img
+</pre></code></section><section><h2>Márgenes de la Presentación - Opcional</h2><code class="language-css"><pre>slide_width = 100%
+slide_height = 100%
+
+.bespoke-slide
+  top: 0
+  margin-top: 0
+  left: 0
+  margin-left: 0
+  </pre></code></section><section><h2>Mi primera diapositiva</h2><h3>index.jade</h3><code class="language-markup"><pre>section.green
+h1 Cómo hacer presentaciones geniales con HTML, CSS y Javascript</pre></code><br><h3>main.styl</h3><code class="language-css"><pre>section.green
+  background-color: #52ED8D
+  </pre></code></section><section><h2>Creando los otros estilos base</h2><code class="language-css"><pre>section.violet
+  background-color: #7914CC
+  color: white
+  
+section.magenta
+  background-color: #DD40FF
+  </pre></code></section><section><h2>Diapositiva con imagen de base, enlace y un cuadro de texto</h2><h3>index.jade</h3><code class="language-markup"><pre>section.solido
+  .tint
+    h1 Jaime Andrés García
+    h2 CEO - Ingenio Sólido
+    a(href='http://www.ingeniosolido.com') http://www.ingeniosolido.com
+    a(href='http://twitter.com/JaimeAGarciaM') @JaimeAGarciaM</pre></code><br><h3>main.styl</h3><code class="language-css"><pre>section.solido
+  background-image url(../img/fondo-isolido.png);
+  background-size cover
+  a
+    font-size: 40px
+    
+.tint
+  background: rgba(0,0,0,0.7)
+  padding: 30px
+  color: white
+  </pre></code></section><section><h2>Syntax Highlighting</h2><h3 class="bullet">Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3><hr><code class="language-javascript"><pre>bespoke.horizontal.from('article', {
+  bullets: 'li, .bullet',
+  hash: true,
+  state: true
+});
+</pre></code></section><section data-bespoke-hash="named-route"><h2>Named Route</h2><h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3><p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p></section><section data-bespoke-state="emphatic"><h2>Emphatic Slide!</h2><h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3></section><section><h2 class="bullet">Just the beginning...</h2><hr><ul><li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li><li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li><li>Edit JavaScript in <em>'src/scripts/main.js'</em></li></ul><hr><ul><li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li></ul></section></article><script src="bower_components/bespoke.js/dist/bespoke.min.js"></script><script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script><script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script><script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script><script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script><script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script><script src="bower_components/prism/prism.js"></script><script src="scripts/main.js"></script></body></html>
