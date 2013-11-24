@@ -318,6 +318,42 @@ section.how {
   -moz-background-size: cover;
   background-size: cover;
 }
+section.surprised {
+  background-image: url("../img/surprised.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.skeptical {
+  background-image: url("../img/skeptical.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.thatsright {
+  background-image: url("../img/thatsright.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.thankyou {
+  background-image: url("../img/thankyou.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.approve {
+  background-image: url("../img/approve.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.loop {
+  background-image: url("../img/loop.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .tint {
   background: rgba(0,0,0,0.7);
   padding: 30px;

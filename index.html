@@ -1,9 +1,9 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Presentaciones con Javascript</title><link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css"><link rel="stylesheet" type="text/css" href="bower_components/nvd3/nv.d3.css"><link rel="stylesheet" type="text/css" href="styles/bespoke-spotlight.css"><link rel="stylesheet" type="text/css" href="styles/main.css"></head><body><article><section class="green"><h1>Cómo hacer presentaciones geniales con HTML, CSS y Javascript</h1></section><section class="solido"><div class="tint"><h1>Jaime Andrés García</h1><h2>CEO - Ingenio Sólido</h2><a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a><br><a href="http://twitter.com/JaimeAGarciaM">@JaimeAGarciaM</a></div></section><section class="magenta"><h1>Algo sobre mí ...</h1></section><section class="lazy"><div class="tint"><h1>Soy flojo</h1></div></section><section class="love"><div class="tint"><h1>Me gusta programar</h1></div></section><section class="hate"><div class="tint"><h1>Odio las aplicaciones de ofimática</h1></div></section><section class="violet"><h1>Por mi trabajo ... debo realizar presentaciones frecuentamente</h1></section><section class="how"><div class="tint"><h1>Qué puedo hacer?</h1></div></section><section class="white"><h1>The Partners for Laziness</h1><div class="lazy-partners"><img src="img/bespoke-logo.png"><img src="img/yeoman-logo.png"><img src="img/grunt-logo.png"><br><img src="img/jade-logo.png"><img src="img/stylus-logo.png"></div></section><section><h2>Pre-requisitos y Presentación Base</h2><code class="language-bash"><pre>sudo npm install -g yo
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Presentaciones con Javascript</title><link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css"><link rel="stylesheet" type="text/css" href="bower_components/nvd3/nv.d3.css"><link rel="stylesheet" type="text/css" href="styles/bespoke-spotlight.css"><link rel="stylesheet" type="text/css" href="styles/main.css"></head><body><article><section class="green"><h1>Cómo hacer presentaciones geniales con HTML, CSS y Javascript</h1></section><section class="solido"><div class="tint"><h1>Jaime Andrés García</h1><h2>CEO - Ingenio Sólido</h2><a href="http://www.ingeniosolido.com">http://www.ingeniosolido.com</a><br><a href="http://twitter.com/JaimeAGarciaM">@JaimeAGarciaM</a></div></section><section class="magenta"><h1>Algo sobre mí ...</h1></section><section class="lazy"><div class="tint"><h1>Soy flojo</h1></div></section><section class="love"><div class="tint"><h1>Me gusta Programar</h1></div></section><section class="hate"><div class="tint"><h1>Odio las aplicaciones de ofimática</h1></div></section><section class="violet"><h1>Por mi trabajo ... debo realizar presentaciones frecuentamente</h1></section><section class="how"><div class="tint"><h1>Qué puedo hacer?</h1></div></section><section class="white"><h1>The Partners for Laziness</h1><div class="lazy-partners"><img src="img/bespoke-logo.png"><img src="img/yeoman-logo.png"><img src="img/grunt-logo.png"><br><img src="img/jade-logo.png"><img src="img/stylus-logo.png"></div></section><section class="violet"><h1>El día de hoy vamos crear esta misma presentación</h1></section><section class="magenta"><h1>Se lo que están pensando</h1></section><section class="green"><h2>Si creamos una presentación que crea la misma presentación que crea la misma presentación...</h2></section><section class="loop"><div class="tint"><h1>Vamos a hacer un loop infinito</h1></div></section><section class="approve"><div class="tint"><h1>Afortunadamente ... Sabemos como lidiar con loops infinitos</h1></div></section><section><h2>Pre-requisitos y Presentación Base</h2><code class="language-bash"><pre>sudo npm install -g yo
 sudo npm install -g yo generator-bespoke
 
 git clone ....
 
-cd medellinjs-presentaciones-con-javascript
+cd medellinjs-presentaciones-con-javascript-lite
 yo bespoke
 sudo npm install
 
@@ -31,12 +31,13 @@ section.magenta
   
 section.white
   background-color: white
-  </pre></code></section><section><h2>Diapositiva con fondo de imagen, enlace y un cuadro de texto</h2><h3>index.jade</h3><code class="language-markup"><pre>section.solido
+  </pre></code></section><section><h2>Diapositiva con fondo de imagen, enlace y un cuadro de texto - Jade</h2><h3>index.jade</h3><code class="language-markup"><pre>section.solido
   .tint
     h1 Jaime Andrés García
     h2 CEO - Ingenio Sólido
     a(href='http://www.ingeniosolido.com') http://www.ingeniosolido.com
-    a(href='http://twitter.com/JaimeAGarciaM') @JaimeAGarciaM</pre></code><br><h3>main.styl</h3><code class="language-css"><pre>section.solido
+    a(href='http://twitter.com/JaimeAGarciaM') @JaimeAGarciaM
+    </pre></code></section><section><h2>Diapositiva con fondo de imagen, enlace y un cuadro de texto - Stylus</h2><h3>main.styl</h3><code class="language-css"><pre>section.solido
   background-image url(../img/fondo-isolido.png);
   background-size cover
   a
@@ -104,4 +105,27 @@ section.how
         margin-top: 0
         left: 0
         margin-left: 0
-        </pre></code></section><section class="white"><h2>Agregando diapositiva con gráfica interactiva</h2><div id="chart"><svg style="height:500px;width:800px"></svg></div></section><section class="green"><h2>Agregando opción de búsqueda a las diapositivas</h2></section></article><script src="bower_components/bespoke.js/dist/bespoke.min.js"></script><script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script><script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script><script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script><script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script><script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script><script src="bower_components/prism/prism.js"></script><script src="bower_components/d3/d3.min.js"></script><script src="bower_components/nvd3/nv.d3.min.js"></script><script src="scripts/linechart.js"></script><script src="scripts/bespoke-spotlight.min.js"></script><script src="scripts/main.js"></script></body></html>
+        </pre></code></section><section class="white"><h2>Agregando diapositiva con gráfica interactiva</h2><div id="chart"><svg style="height:400px;width:700px"></svg></div></section><section><h2>Instalando y Agregando las librerías de D3</h2><code class="language-bash"><pre>bower install nvd3</pre></code><br><h3>index.jade</h3><code class="language-markup"><pre>link(rel='stylesheet', type='text/css', href='bower_components/nvd3/nv.d3.css')
+
+script(src='bower_components/d3/d3.min.js')
+script(src='bower_components/nvd3/nv.d3.min.js')
+</pre></code></section><section><h2>Agregando gráfica</h2><h3>index.jade</h3><code class="language-markup"><pre>section.white
+  h2 Agregando diapositiva con gráfica interactiva
+  div#chart
+    svg(style=&quot;height:400px;width:700px&quot;)
+    
+script(src='scripts/linechart.js')
+
+</pre></code></section><section class="surprised"><div class="tint"><h1>Así de fácil</h1></div></section><section class="skeptical"><div class="tint"><h2>Sólo falta que digas que también le puedes agregar campo de búsqueda a la presentación</h2></div></section><section class="thatsright"><div class="tint"><h1>Así es</h1></div></section><section class="violet"><h1>Gracias a los plugins de bespoke</h1></section><section><h2>Agregando bespoke-spotlight - Jade</h2><h3>index.jade</h3><code class="language-markup"><pre>link(rel='stylesheet', type='text/css', href='styles/bespoke-spotlight.css')
+
+script(src='scripts/bespoke-spotlight.min.js')
+</pre></code></section><section><h2>Agregando bespoke-spotlight - Javascript</h2><h3>main.js</h3><h4>Simplemente se agrega spotlight: true</h4><code class="language-javascript"><pre>bespoke.horizontal.from('article', {
+    bullets: 'li, .bullet',
+    scale: true,
+    hash: true,
+    progress: true,
+    state: true,
+    spotlight: true
+});
+</pre></code></section><section><h2>Ahora publiquemos nuestra presentación en Github Pages</h2><h3>Primero hacemos add, commit y push a nuestro repositorio y luego simplemente</h3><code class="language-bash"><pre>grunt deploy
+</pre></code></section><section><h1>Quieren más?</h1><h2><a href="http://markdalgleish.com/projects/bespoke.js/">Bespoke JS</a></h2><h2><a href="http://lab.hakim.se/reveal-js"> Reval JS</a></h2><h2><a href="http://bartaz.github.io/impress.js"> Impress JS</a></h2></section><section class="thankyou"><div class="tint"><h1>Muchas gracias</h1></div></section></article><script src="bower_components/bespoke.js/dist/bespoke.min.js"></script><script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script><script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script><script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script><script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script><script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script><script src="bower_components/prism/prism.js"></script><script src="bower_components/d3/d3.min.js"></script><script src="bower_components/nvd3/nv.d3.min.js"></script><script src="scripts/linechart.js"></script><script src="scripts/bespoke-spotlight.min.js"></script><script src="scripts/main.js"></script></body></html>
