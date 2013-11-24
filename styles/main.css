@@ -279,6 +279,12 @@ section.violet {
 section.magenta {
   background-color: #dd40ff;
 }
+section.white {
+  background-color: #fff;
+}
+section.white img {
+  width: 20%;
+}
 section.solido {
   background-image: url("../img/fondo-isolido.png");
   -webkit-background-size: cover;
@@ -287,6 +293,30 @@ section.solido {
 }
 section.solido a {
   font-size: 40px;
+}
+section.lazy {
+  background-image: url("../img/lazy.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.hate {
+  background-image: url("../img/hate.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.love {
+  background-image: url("../img/love-programming.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+section.how {
+  background-image: url("../img/how.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .tint {
   background: rgba(0,0,0,0.7);
