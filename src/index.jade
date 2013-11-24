@@ -35,7 +35,7 @@ html
 
       section.love
         .tint
-          h1 Me gusta programar
+          h1 Me gusta Programar
 
       section.hate
         .tint
@@ -58,6 +58,23 @@ html
           img(src="img/jade-logo.png")
           img(src="img/stylus-logo.png")
 
+      section.violet
+        h1 El día de hoy vamos crear esta misma presentación
+
+      section.magenta
+        h1 Se lo que están pensando
+
+      section.green
+        h2 Si creamos una presentación que crea la misma presentación que crea la misma presentación...
+
+      section.loop
+        .tint
+          h1 Vamos a hacer un loop infinito
+
+      section.approve
+        .tint
+          h1 Afortunadamente ... Sabemos como lidiar con loops infinitos
+
 
       section
         h2 Pre-requisitos y Presentación Base
@@ -68,7 +85,7 @@ html
 
             git clone ....
 
-            cd medellinjs-presentaciones-con-javascript
+            cd medellinjs-presentaciones-con-javascript-lite
             yo bespoke
             sudo npm install
 
@@ -119,7 +136,7 @@ html
               background-color: white
 
       section
-        h2 Diapositiva con fondo de imagen, enlace y un cuadro de texto
+        h2 Diapositiva con fondo de imagen, enlace y un cuadro de texto - Jade
         h3 index.jade
         code.language-markup
           pre.
@@ -129,7 +146,9 @@ html
                 h2 CEO - Ingenio Sólido
                 a(href='http://www.ingeniosolido.com') http://www.ingeniosolido.com
                 a(href='http://twitter.com/JaimeAGarciaM') @JaimeAGarciaM
-        br
+
+      section
+        h2 Diapositiva con fondo de imagen, enlace y un cuadro de texto - Stylus
         h3 main.styl
         code.language-css
           pre.
@@ -243,11 +262,96 @@ html
       section.white
         h2 Agregando diapositiva con gráfica interactiva
         div#chart
-          svg(style="height:500px;width:800px")
+          svg(style="height:400px;width:700px")
 
 
-      section.green
-        h2 Agregando opción de búsqueda a las diapositivas
+      section
+        h2 Instalando y Agregando las librerías de D3
+        code.language-bash
+          pre.
+            bower install nvd3
+        br
+        h3 index.jade
+        code.language-markup
+          pre.
+            link(rel='stylesheet', type='text/css', href='bower_components/nvd3/nv.d3.css')
+
+            script(src='bower_components/d3/d3.min.js')
+            script(src='bower_components/nvd3/nv.d3.min.js')
+
+      section
+        h2 Agregando gráfica
+        h3 index.jade
+        code.language-markup
+          pre.
+            section.white
+              h2 Agregando diapositiva con gráfica interactiva
+              div#chart
+                svg(style="height:400px;width:700px")
+
+            script(src='scripts/linechart.js')
+
+
+      section.surprised
+        .tint
+          h1 Así de fácil
+
+      section.skeptical
+        .tint
+          h2 Sólo falta que digas que también le puedes agregar campo de búsqueda a la presentación
+
+      section.thatsright
+        .tint
+          h1 Así es
+
+      section.violet
+        h1 Gracias a los plugins de bespoke
+
+      section
+        h2 Agregando bespoke-spotlight - Jade
+        h3 index.jade
+        code.language-markup
+          pre.
+            link(rel='stylesheet', type='text/css', href='styles/bespoke-spotlight.css')
+
+            script(src='scripts/bespoke-spotlight.min.js')
+
+      section
+        h2 Agregando bespoke-spotlight - Javascript
+        h3 main.js
+        h4 Simplemente se agrega spotlight: true
+        code.language-javascript
+          pre.
+            bespoke.horizontal.from('article', {
+                bullets: 'li, .bullet',
+                scale: true,
+                hash: true,
+                progress: true,
+                state: true,
+                spotlight: true
+            });
+
+      section
+        h2 Ahora publiquemos nuestra presentación en Github Pages
+        h3 Primero hacemos add, commit y push a nuestro repositorio y luego simplemente
+        code.language-bash
+          pre.
+            grunt deploy
+
+      section
+        h1 Quieren más?
+        h2
+          a(href='http://markdalgleish.com/projects/bespoke.js/') Bespoke JS
+        h2
+          a(href='http://lab.hakim.se/reveal-js')  Reval JS
+        h2
+          a(href='http://bartaz.github.io/impress.js')  Impress JS
+
+      section.thankyou
+        .tint
+          h1 Muchas gracias
+
+
 
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
@@ -260,5 +364,4 @@ html
     script(src='bower_components/nvd3/nv.d3.min.js')
     script(src='scripts/linechart.js')
     script(src='scripts/bespoke-spotlight.min.js')
-
     script(src='scripts/main.js')
